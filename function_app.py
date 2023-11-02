@@ -24,7 +24,7 @@ def acceptCall(azeventgrid: func.EventGridEvent):
 
     # ... (handle other event types as needed)
 
-@app.route(route="acsWebhook", auth_level=function.AuthLevel.ANONYMOUS)
+@app.route(route="acsWebhook", auth_level=func.AuthLevel.ANONYMOUS)
 def acs_webhook(req: func.HttpRequest) -> func.HttpResponse:
     # Extract information from the Event Grid event
     event_data = req.get_json()  # Assume the request body contains the event data in JSON format
