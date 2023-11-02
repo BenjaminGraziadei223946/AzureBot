@@ -2,6 +2,7 @@ import azure.functions as func
 import logging
 import requests
 
+app = func.FunctionApp()
 
 @app.event_grid_trigger(arg_name="azeventgrid")
 def acceptCall(azeventgrid: func.EventGridEvent):
@@ -33,5 +34,3 @@ def acs_webhook(req: func.HttpRequest) -> func.HttpResponse:
     
 
     return func.HttpResponse("Data forwarded to Microsoft Teams bot", status_code=200)
-
-app = func.FunctionApp()
