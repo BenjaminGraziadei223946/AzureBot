@@ -31,7 +31,6 @@ def acceptCall(azeventgrid: func.EventGridEvent):
 
     logging.info('Incoming call')
     response = requests.post(webhook_url, json=azeventgrid.get_json())
-    return func.HttpResponse("Data forwarded to Microsoft Teams bot", status_code=200)
 
 @app.route(route="acsWebhook", auth_level=func.AuthLevel.ANONYMOUS)
 def acs_webhook(req: func.HttpRequest) -> func.HttpResponse:
