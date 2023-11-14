@@ -4,4 +4,5 @@
 
 azure-functions
 requests
-azure-communication-callingserver
+azure-communication-callautomation
+azure-identity
