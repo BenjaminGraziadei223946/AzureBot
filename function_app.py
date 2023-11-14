@@ -1,22 +1,10 @@
 import azure.functions as func
 import logging
 import requests
-from azure.communication.callautomation import CallAutomationClient, IncomingCallContext
-from azure.identity import DefaultAzureCredential
+import json
+
 
 app = func.FunctionApp()
-
-def accept_incoming_call(call_id):
-    # Initialize the CallAutomationClient
-    call_client = CallAutomationClient("endpoint=https://maxcomser.europe.communication.azure.com/;accesskey=sOLSdBBHU9tgsPa1QQ779r73xsz5S5U3T6+QSejGzItpTep2T1cz0cadvSJQNqz5lyWS2QicoGYXVnD5dhq91w==", DefaultAzureCredential())
-
-    # Get the context for the incoming call
-    incoming_call_context = IncomingCallContext(call_id)
-
-    # Answer the call
-    call_connection = call_client.answer_call(incoming_call_context)
-    # Additional logic for call handling can be added here
-
 
 def send_message_to_bot(message):
     # Generate a token using your Direct Line secret
@@ -65,13 +53,3 @@ def acs_webhook(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse("Invalid JSON", status_code=400)
     
     return func.HttpResponse(f"Event processed, {bot_message}", status_code=200)
-
-@app.route(route="acceptCall", methods=["POST"], auth_level=func.AuthLevel.ANONYMOUS)
-def handle_incoming_call(req: func.HttpRequest) -> func.HttpResponse:
-    try:
-        request_data = req.get_json()
-        call_id = request_data['data']['callId']
-        accept_incoming_call(call_id)
-        return func.HttpResponse("Call accepted", status_code=200)
-    except Exception as e:
-        return func.HttpResponse(f"Error: {str(e)}", status_code=500)
