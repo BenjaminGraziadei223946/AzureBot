@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureBot", "AzureBot.csproj", "{C2F92B63-95F3-405A-A230-890D4E05E9CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F92B63-95F3-405A-A230-890D4E05E9CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F92B63-95F3-405A-A230-890D4E05E9CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F92B63-95F3-405A-A230-890D4E05E9CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F92B63-95F3-405A-A230-890D4E05E9CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA1D1C88-820E-4E6A-B3EC-66044C7D6CB2}
+	EndGlobalSection
+EndGlobal

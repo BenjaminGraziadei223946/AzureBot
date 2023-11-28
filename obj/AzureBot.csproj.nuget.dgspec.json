@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\bgraziadei\\OneDrive - Maxaro\\Documenten\\GitHub\\AzureBot\\AzureBot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\bgraziadei\\OneDrive - Maxaro\\Documenten\\GitHub\\AzureBot\\AzureBot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\bgraziadei\\OneDrive - Maxaro\\Documenten\\GitHub\\AzureBot\\AzureBot.csproj",
+        "projectName": "AzureBot",
+        "projectPath": "C:\\Users\\bgraziadei\\OneDrive - Maxaro\\Documenten\\GitHub\\AzureBot\\AzureBot.csproj",
+        "packagesPath": "C:\\Users\\bgraziadei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bgraziadei\\OneDrive - Maxaro\\Documenten\\GitHub\\AzureBot\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\bgraziadei\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
